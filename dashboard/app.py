@@ -1,16 +1,17 @@
 # --------------------------------------------
 # Imports
 # --------------------------------------------
-from shiny import reactive, render
-from shiny.express import ui
+from shiny import reactive, render,req
+from shiny.express import input, ui, render
 import random
 from datetime import datetime
 from collections import deque
 import pandas as pd
 import plotly.express as px
-from shinywidgets import render_plotly
+from shinywidgets import render_plotly, render_widget, output_widget
 from scipy import stats
 from faicons import icon_svg
+import faicons as fa
 
 # --------------------------------------------
 # Constants
